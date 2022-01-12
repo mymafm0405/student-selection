@@ -1,26 +1,29 @@
 import { Student } from './student.model';
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class StudentsService {
+  openModalSub = new Subject<boolean>();
+
   students: Student[] = [
     new Student(
       'Mahmoud Yhya',
-      'https://i.dlpng.com/static/png/6584089_preview.png'
+      'https://cdn.iconscout.com/icon/free/png-256/graduating-student-2465650-2042096.png'
     ),
     new Student(
       'Asmaa Fouad',
-      'https://i.dlpng.com/static/png/6584089_preview.png'
+      'https://cdn.iconscout.com/icon/free/png-256/graduating-student-2465650-2042096.png'
     ),
     new Student(
       'Retaj Mahmoud',
-      'https://i.dlpng.com/static/png/6584089_preview.png'
+      'https://cdn.iconscout.com/icon/free/png-256/graduating-student-2465650-2042096.png'
     ),
     new Student(
       'Adam Mahmoud',
-      'https://i.dlpng.com/static/png/6584089_preview.png'
+      'https://cdn.iconscout.com/icon/free/png-256/graduating-student-2465650-2042096.png'
     ),
   ];
 
@@ -30,5 +33,9 @@ export class StudentsService {
 
   getStudents() {
     return this.students;
+  }
+
+  openModal() {
+    this.openModalSub.next(true);
   }
 }

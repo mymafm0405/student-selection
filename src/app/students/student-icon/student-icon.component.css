@@ -9,3 +9,6 @@ span {
 .center {
   margin: 5px auto;
 }
+.student-image {
+  cursor: pointer;
+}
