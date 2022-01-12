@@ -1,0 +1,11 @@
+.student-name {
+  color: orangered;
+  font-style: italic;
+}
+span {
+  color: green;
+  font-size: 35px;
+}
+.center {
+  margin: 5px auto;
+}

@@ -1,0 +1,30 @@
+<div class="col-md-6 col-md-push-3">
+  <form (ngSubmit)="onFormSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        class="form-control"
+        name="name"
+        placeholder="Student name"
+        ngModel
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="image">Select image</label>
+      <input
+        id="image"
+        type="file"
+        class="form-control"
+        name="image"
+        ngModel
+        required
+      />
+    </div>
+    <button class="btn btn-danger" type="submit" [disabled]="f.invalid">
+      Save student
+    </button>
+  </form>
+</div>
