@@ -15,12 +15,16 @@ span {
   margin-bottom: 30px;
 }
 .student-grey {
-  width: 180px;
+  width: 130px;
   height: 250px;
-  background-color: #333;
+  background-color: #000;
   cursor: pointer;
   border: 1px solid #fff;
 }
 .student-grey:hover {
-  background-color: #111111;
+  background-color: #333;
+}
+.student-image {
+  height: 250px;
+  width: 130px;
 }

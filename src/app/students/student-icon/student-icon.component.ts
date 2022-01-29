@@ -9,12 +9,16 @@ import { StudentsService } from 'src/app/shared/students.service';
 })
 export class StudentIconComponent implements OnInit {
   @Input() student: Student;
+  @Input() studentIndex: number;
+
   numOfClicks: number[] = [];
   imageClicked = false;
 
   constructor(private studentsService: StudentsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.studentIndex = this.studentIndex + 1;
+  }
 
   onStudentClick() {
     // const newClick = 1;

@@ -2,14 +2,14 @@
   <!-- <span class="glyphicon glyphicon-ok" *ngFor="let check of numOfClicks"></span> -->
   <div
     *ngIf="!imageClicked"
-    class="student-grey"
+    class="student-grey img-circle"
     (click)="onStudentClick()"
   ></div>
   <img
     *ngIf="imageClicked"
-    [src]="student.imagePath"
+    [src]="'../../../assets/'+studentIndex+'.jpg'"
     [alt]="student.name"
-    class="img-thumbnail student-image"
+    class="img-thumbnail img-responsive student-image img-circle"
   />
   <!-- <img
     src="../../../assets/happy.png"

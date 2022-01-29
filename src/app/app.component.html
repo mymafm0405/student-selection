@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1 class="app-title">Students Selcetion</h1>
+      <h1 class="app-title">2D - مبدعات</h1>
     </div>
   </div>
   <div class="row text-center">
@@ -15,9 +15,9 @@
     <app-add-student></app-add-student>
   </div>
   <div class="row add-margin text-center">
-    <div class="col-md-2" *ngFor="let student of students">
+    <div class="col-md-2" *ngFor="let student of students; let i = index">
       <!-- <app-black-icon></app-black-icon> -->
-      <app-student-icon [student]="student"></app-student-icon>
+      <app-student-icon [student]="student" [studentIndex]="i"></app-student-icon>
     </div>
   </div>
 </div>
