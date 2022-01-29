@@ -6,11 +6,10 @@ import { StudentIconComponent } from './students/student-icon/student-icon.compo
 import { AddStudentComponent } from './students/add-student/add-student.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, StudentIconComponent, AddStudentComponent],
-  imports: [BrowserModule, FormsModule, HttpClientModule, NgbModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

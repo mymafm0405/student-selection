@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1>Students Selcetion</h1>
+      <h1 class="app-title">Students Selcetion</h1>
     </div>
   </div>
   <div class="row text-center">
@@ -16,6 +16,7 @@
   </div>
   <div class="row add-margin text-center">
     <div class="col-md-2" *ngFor="let student of students">
+      <!-- <app-black-icon></app-black-icon> -->
       <app-student-icon [student]="student"></app-student-icon>
     </div>
   </div>

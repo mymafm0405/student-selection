@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #494949;
+}
 .add-margin {
   margin-top: 20px;
 }

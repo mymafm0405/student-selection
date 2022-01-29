@@ -1,5 +1,5 @@
 .student-name {
-  color: orangered;
+  color: rgb(255, 251, 0);
   font-style: italic;
 }
 span {
@@ -9,6 +9,18 @@ span {
 .center {
   margin: 5px auto;
 }
-.student-image {
+.student-div {
+  height: 250px;
+  max-width: fit-content;
+  margin-bottom: 30px;
+}
+.student-grey {
+  width: 180px;
+  height: 250px;
+  background-color: #333;
   cursor: pointer;
+  border: 1px solid #fff;
+}
+.student-grey:hover {
+  background-color: #111111;
 }

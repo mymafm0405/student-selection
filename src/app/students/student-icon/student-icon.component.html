@@ -1,15 +1,21 @@
-<span class="glyphicon glyphicon-ok"></span>
-<span class="glyphicon glyphicon-ok"></span>
-<span class="glyphicon glyphicon-ok"></span>
-<img
-  [src]="student.imagePath"
-  [alt]="student.name"
-  class="img-thumbnail student-image"
-/>
-<!-- <img
-  src="../../../assets/happy.png"
-  alt="happy face"
-  class="img-responsive center"
-  width="60"
-/> -->
-<h4 class="student-name">{{ student.name }}</h4>
+<div class="student-div">
+  <!-- <span class="glyphicon glyphicon-ok" *ngFor="let check of numOfClicks"></span> -->
+  <div
+    *ngIf="!imageClicked"
+    class="student-grey"
+    (click)="onStudentClick()"
+  ></div>
+  <img
+    *ngIf="imageClicked"
+    [src]="student.imagePath"
+    [alt]="student.name"
+    class="img-thumbnail student-image"
+  />
+  <!-- <img
+    src="../../../assets/happy.png"
+    alt="happy face"
+    class="img-responsive center"
+    width="60"
+  /> -->
+  <h4 *ngIf="imageClicked" class="student-name">{{ student.name }}</h4>
+</div>

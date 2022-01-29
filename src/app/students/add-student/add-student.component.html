@@ -26,5 +26,11 @@
     <button class="btn btn-danger" type="submit" [disabled]="f.invalid">
       Save student
     </button>
+    <div *ngIf="success && message" class="alert alert-success">
+      <h4>{{ message }}</h4>
+    </div>
+    <div *ngIf="errorHappened && message" class="alert alert-success">
+      <h4>{{ message }}</h4>
+    </div>
   </form>
 </div>
